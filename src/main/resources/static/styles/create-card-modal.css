@@ -1,0 +1,102 @@
+*{
+  color: white;
+}
+
+.header{
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+}
+
+.modal-overlay-create {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.create-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2f3133;
+  padding: 10px;
+  min-width: 300px;
+  min-height: 300px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+#cardCreateDescInput {
+  resize: none;
+  padding: 5px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.create-modal-form{
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.create-modal-form input, .create-modal-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input, textarea {
+  border: 3px, solid, #3c3e41;
+  background: #3c3e41;
+}
+
+.create-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create-modal-buttons button {
+  color: white;
+  border: none;
+  min-width: 10rem;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.create-modal-buttons button:hover {
+  cursor: pointer;
+}
+
+.create-modal-buttons button:active, #closeCreateModal:active {
+  transform: scale(0.95);
+}
+
+#confirmBtnCreateModal {
+  background: green;
+}
+
+#cancelBtnCreateModal {
+  background: red;
+}
+
+#cardCreateTitleInput {
+  height: 3em;
+  padding: 0 5px;
+}
+
+#cardCreateTitleInput:focus, 
+#cardCreateDescInput:focus{
+  outline: none;
+  border: 2px solid #aaa;
+}
+
+.error-text{
+  border: 2px solid red;
+}

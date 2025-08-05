@@ -1,0 +1,34 @@
+<div id="cardModal" class="modal">
+  <div class="modal-content">
+    <div class="header-modal-div">
+      <span id="closeModal" class="close">&times;</span>
+    </div>
+    
+    <div class="modal-form">
+      <div id="modal-form-input">
+        <p>Título: </p>
+        <input type="text" id="modalTitleInput" placeholder="Título" />
+        <p>Descrição</p>
+        <textarea id="modalDescriptionInput" placeholder="Descrição"></textarea>
+        <div id="modal-from-block">
+          <p>Bloqueado: </p>
+          <select id="modalFormBlockSelect">
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
+          </select>
+          <p id="parBlock">Motivo:</p>
+          <input type="text" id="inputBlock" placeholder="Motivo bloqueio" />
+        </div>
+      </div>
+      <div id="historical">
+        <h2 id="historicalTitle">Histórico</h2>
+        <div id="historicalDetails"></div>
+      </div>
+    </div>
+
+    <div class="modal-buttons">
+        <button id="cancelBtnModal">Fechar</button>
+        <button id="confirmBtnModal">Salvar</button>
+    </div>
+  </div>
+</div>

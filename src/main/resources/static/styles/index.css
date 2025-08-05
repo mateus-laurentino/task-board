@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    background: #3c3e41;
+}
+
+h4 {
+    margin: 5px;
+    font-weight: normal;
+}
+
+a {
+    display: inline-block;
+    margin: 5px;
+    font-weight: normal;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;  
+}
+
+.add-card-btn {
+  background-color: transparent;
+  color: #ccc;
+  border: 2px solid #3c3e41;
+  border-radius: 5px;
+  font-size: 30px;
+  width: -webkit-fill-available;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.add-card-btn:hover {
+  background-color: #2a2a2a;
+  border-color: #666;
+}
+
+.board-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    content: "";
+}
+
+.board-container::after {
+    content: "";
+    min-width: 1px;
+}
+
+.column {
+    margin: 10px;
+    min-width: 200px;
+    width: calc(100% - 20px);
+    background: #2f3133;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.column-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    margin: 5px;
+    border-radius: 5px
+}
+
+.card-list {
+    height: 100%;
+    width: -webkit-fill-available;
+    margin: 5px;
+    overflow-y: auto;
+}
+
+.div-card {
+    display: flex;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    margin: 5px;
+}
+
+.state-card-tag {
+    display: flex;
+    width: 15px;
+}
+
+.state-color-tag {
+    margin: 5px;
+    width: 5px;
+    border-radius: 50px
+}

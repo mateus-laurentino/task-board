@@ -1,0 +1,158 @@
+*{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2f3133;
+  padding: 10px;
+  min-width: 80em;
+  min-height: 300px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.header-modal-div {
+  width: -webkit-fill-available;
+  height: 31px;
+}
+
+.modal-form, #modal-form-input{
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+
+.modal-form {
+  overflow: auto;
+  padding-right: 15px;
+}
+
+#modal-form-input {
+  min-height: -webkit-fill-available;
+}
+
+#historical {
+  margin-top: 1rem;
+  background: #3c3e41;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#historicalTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#modalTitleInput {
+  padding: 0 10px;
+  font-size: 20px;
+  height: 3rem;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#modalFormBlockSelect {
+  margin-left: 5px;
+  margin-right: 30px;
+}
+
+#parBlock, #inputBlock {
+  display: none;
+}
+
+#inputBlock {
+  margin-left: 5px;
+  width: -webkit-fill-available;
+}
+
+#modalDescriptionInput {
+  padding: 10px;
+  font-size: 15px;
+  resize: none;
+  margin-bottom: 10px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+#modalTitleInput:focus, 
+#modalDescriptionInput:focus,
+#inputBlock:focus{
+  outline: none;
+  border: 2px solid #aaa;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  color: white;
+  border: none;
+  min-width: 10rem;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.modal-buttons button:hover {
+  cursor: pointer;
+}
+
+.modal-buttons button:active, #closeModal:active {
+  transform: scale(0.95);
+}
+
+#modal-from-block {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+#modal-from-block select {
+  background: #3c3e41;
+}
+
+#confirmBtnModal {
+  display: none;
+  background: green;
+}
+
+#cancelBtnModal {
+  background: red;
+}
+
+.historic-div {
+  border-radius: 10px;
+  padding: 25px 50px;
+  margin: 5px;
+  background: #2f3133;
+}
+
+.error-text{
+  border: 2px solid red;
+}
